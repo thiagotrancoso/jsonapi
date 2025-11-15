@@ -22,8 +22,8 @@ class ArticleFactory extends Factory
             'title' => $title,
             'slug' => Str::slug($title),
             'content' => $this->faker->paragraphs(3, true),
-            'category_id' => Category::factory(),
-            'user_id' => User::factory(),
+            // 'category_id' => Category::factory(),
+            // 'user_id' => User::factory(),
         ];
     }
 }
